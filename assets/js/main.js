@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('.nav-links a');
+    const headerHeight = document.querySelector('header').offsetHeight;
   
     navLinks.forEach(link => {
       link.addEventListener('click', function(e) {
@@ -9,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (targetSection) {
           window.scroll({
-            top: targetSection.offsetTop - 80, // Adjust for fixed header height
+            top: targetSection.offsetTop - headerHeight + 5, // slightly adjust to fine-tune position
             behavior: 'smooth'
           });
         }
