@@ -145,107 +145,126 @@ h2 {
 }
 
 /* ----- PROJECTS SECTION ----- */
+/* ---------------- Projects Section ---------------- */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.project-item {
-  background: #f8f9fa;
-  padding: 1.2rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.project-item img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 0.8rem;
-}
-
-.project-item h3 {
-  margin: 0.6rem 0;
-  font-size: 1.3rem;
-  color: #1a73e8;
-}
-
-.project-item p {
-  color: #555;
-}
-
-.project-images {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.project-images img {
-  width: 45%;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* ----- CERTIFICATES SECTION ----- */
-.certificates-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.certificate-item {
-  background: #f8f9fa;
-  padding: 1.2rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certificate-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.certificate-item img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 0.8rem;
-}
-
-.certificate-item h3 {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-  color: #1a73e8;
-}
-
-.certificate-item p {
-  color: #555;
-}
-
-.certificate-item a {
-  display: inline-block;
-  margin-top: 0.6rem;
-  text-decoration: none;
-  color: #1a73e8;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.certificate-item a:hover {
-  color: #0057c2;
-}
-
+    /* Increase the minimum size for larger cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 0 2rem;
+  }
+  
+  .project-item {
+    background: #f8f9fa;
+    padding: 1.8rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 450px;  /* Set a minimum height for more content space */
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  
+  .project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    /* Increase image area, if you have a fixed height, you can specify it like:
+       height: 250px;
+       object-fit: cover; */
+  }
+  
+  .project-item h3 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.6rem;
+    color: #1a73e8;
+  }
+  
+  .project-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  /* Optional container for additional project images */
+  .project-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .project-images img {
+    width: 48%;
+    border-radius: 5px;
+    object-fit: cover;
+    /* If you want a fixed height for each additional image: */
+    /* height: 150px; */
+  }
+  
+  /* ---------------- Certificates Section ---------------- */
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 0 2rem;
+  }
+  
+  .certificate-item {
+    background: #f8f9fa;
+    padding: 1.8rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 450px;
+  }
+  
+  .certificate-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  
+  .certificate-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    /* To force a fixed display area, you might add:
+        height: 200px;
+        object-fit: cover; */
+  }
+  
+  .certificate-item h3 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: #1a73e8;
+  }
+  
+  .certificate-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .certificate-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .certificate-item a:hover {
+    color: #0057c2;
+  }
+  
 /* ----- EDUCATION SECTION ----- */
 .education-content {
   text-align: center;
