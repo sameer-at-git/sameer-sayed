@@ -1,4 +1,4 @@
 title: "Sameer Sayed - Data Science Portfolio"
 description: "Aspiring Data Science and Data Analyst portfolio by Sameer Sayed"
-baseurl: ""        # leave empty for project pages, or set your subpath if necessary
-url: "https://sameer-at-git.github.io/e-portfolio/"   # Replace with your custom domain (if any)
+baseurl: "/e-portfolio"        # Repository name goes here, with a leading slash
+url: "https://sameer-at-git.github.io"   # Domain without trailing slash
