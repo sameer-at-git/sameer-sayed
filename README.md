@@ -15,4 +15,5 @@ This is a modern, sleek ePortfolio template built using HTML, CSS, JavaScript, a
 4. **Deploy on GitHub Pages:**
    - Push the repository to GitHub.
    - Enable GitHub Pages in the repository settings.
-   - Your ePortfolio will be live at `https://yourusername.github.io/repository-name/`.
+   - Your ePortfolio will be live at [https://sameer-at-git.github.io/e-portfolio/] 
+
